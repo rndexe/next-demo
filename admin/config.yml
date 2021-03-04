@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: rndexe/next-demo
+  branch: main
+publish_mode: editorial_workflow
+media_folder: "public/images"
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Slides" # Used in the UI
+    folder: "posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    media_folder: "public/images/"
+    public_folder: ""
+    editor:
+     preview: false
+    fields: # The fields for each document, usually in front matter
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        format: "YYYY-MM-DDTHH:mm"
+        widget: "datetime"
+        dateFormat: "DD/MM/YYYY"
+        timeFormat: ""
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - label: "next link"
+        name: "link"
+        widget: "string"
+      - label: "Video"
+        name: "video"
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
