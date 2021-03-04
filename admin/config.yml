@@ -5,14 +5,14 @@ backend:
   site-domain: heuristic-fermat-ed65d3.netlify.com
 
 publish_mode: editorial_workflow
-media_folder: "public/images"
+media_folder: "/public/images"
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Slides" # Used in the UI
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    media_folder: "public/images/"
+    media_folder: "/public/images/"
     public_folder: ""
     editor:
      preview: false
