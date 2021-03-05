@@ -1,14 +1,21 @@
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import Link  from 'next/link'
 
 export default function Post( {postData}) {
   return (
     <Layout>
       {postData.title}
       <br />
-      {postData.id}
+      <img src={"/next-demo/images/" + postData.image}/>
       <br />
-      {postData.date}
+      <iframe src={postData.video}></iframe>
+      <br />
+      {postData.content}
+      <br />
+      <Link href={postData.link}>
+	  <a> Next </a>
+      </Link>	  
     </Layout>
   )
 }

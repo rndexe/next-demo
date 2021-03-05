@@ -7,24 +7,14 @@ import { getSortedPostsData } from '../lib/posts'
 export default function Home({ allPostsData }) {
   
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, image, video, link }) => (
-            <li className={utilStyles.listItem} key={id}>
-              {title}
-              <br />
-	      {image} 
-	      <br />
-		  {video}
-	      <br />
-		  {link}
-            </li>
-          ))}
-        </ul>
+      <Link href = "/posts/1">
+	<a>Go to slides</a>
+      </Link>
       </section>
     </Layout>
   )
