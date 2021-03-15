@@ -1,5 +1,5 @@
 ---
-title: Kannada ʼಫೈಟೋಪಿಯʼ
+title: Kannada
 image: qr-knot.png
 link: /
 video: https://www.youtube.com/watch?v=W3pP884pmTM
